@@ -6,7 +6,7 @@ package com.zqz.simpleframewok.beans.factory.config;
  */
 public class BeanDefinition {
 
-    public Class beanClass;
+    private Class beanClass;
 
     public BeanDefinition(Class beanClass) {
         this.beanClass = beanClass;

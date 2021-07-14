@@ -1,12 +1,11 @@
-package java.com.zqz.simpleframework.test;
+package com.zqz.simpleframework.test;
 
 
 
 import com.zqz.simpleframewok.beans.factory.config.BeanDefinition;
 import com.zqz.simpleframewok.beans.factory.support.DefaultListableBeanFactory;
+import com.zqz.simpleframework.test.bean.UserService;
 import org.junit.Test;
-
-import java.com.zqz.simpleframework.test.bean.UserService;
 
 public class ApiTest {
 
@@ -14,7 +13,6 @@ public class ApiTest {
     public void test() throws IllegalAccessException, InstantiationException {
         //初始化beanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
-
         //初始化beanDefinition
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition("userService", beanDefinition);

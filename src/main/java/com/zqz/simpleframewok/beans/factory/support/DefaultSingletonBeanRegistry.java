@@ -16,7 +16,7 @@ public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
     }
 
     //受保护的方法，这个方法可以被继承此类的其他类调用，包括AbstractBeanFactory 以及继承的DefaultListableBeanFactory 调用
-    public void addSingleton(String beanName,Object singletonObject) {
+    protected void addSingleton(String beanName,Object singletonObject) {
         singletonObjects.put(beanName,singletonObject);
     }
 }
